@@ -1,10 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { myContactsSlice } from './slice';
-
-export const { increment, decrement } = myContactsSlice.actions;
+import { contactsSlice } from './slice';
 
 export const store = configureStore({
   reducer: {
-    contacts: myContactsSlice.reducer,
+    contacts: contactsSlice.reducer,
   },
 });
